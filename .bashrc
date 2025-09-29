@@ -166,3 +166,6 @@ alias nbrc='nvim ~/.bashrc'
 
 # alias to apply .bashrc changes in current terminal session.
 alias sbrc='source ~/.bashrc'
+
+# alias to gh cli authentication using pass
+alias ghauth='pass github/gh-cli-token | gh auth login --with-token'
