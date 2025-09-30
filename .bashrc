@@ -167,13 +167,19 @@ alias nbrc='nvim ~/.bashrc'
 # alias to apply .bashrc changes in current terminal session.
 alias sbrc='source ~/.bashrc'
 
-# alias to gh cli authentication using pass
+# alias to gh cli authentication using pass.
 alias ghauth='pass github/gh-cli-token | gh auth login --with-token'
 
-# shortcut function for an unrestricted case-insensitive search using fd-find
+# alias for opening lazygit on cwd.
+alias lg='lazygit'
+
+# shortcut function for an unrestricted case-insensitive search using fd-find.
 function fdu() {
   fdfind -ui "$@"
 }
 
-# add fzf key bindings and fuzzy completion
+# add fzf key bindings and fuzzy completion.
 eval "$(fzf --bash)"
+
+# create alias for batcat replacing cat in terminal session.
+alias cat='batcat --paging=never'
