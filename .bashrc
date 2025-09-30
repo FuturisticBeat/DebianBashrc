@@ -183,3 +183,6 @@ eval "$(fzf --bash)"
 
 # create alias for batcat replacing cat in terminal session.
 alias cat='batcat --paging=never'
+
+# create shortcut alias for clear.
+alias c='clear'
