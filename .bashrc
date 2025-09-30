@@ -169,3 +169,8 @@ alias sbrc='source ~/.bashrc'
 
 # alias to gh cli authentication using pass
 alias ghauth='pass github/gh-cli-token | gh auth login --with-token'
+
+# shortcut function for an unrestricted case-insensitive search using fd-find
+function fdu() {
+  fdfind -ui "$@"
+}
