@@ -174,3 +174,6 @@ alias ghauth='pass github/gh-cli-token | gh auth login --with-token'
 function fdu() {
   fdfind -ui "$@"
 }
+
+# add fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
