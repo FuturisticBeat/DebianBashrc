@@ -208,3 +208,6 @@ _fzf_comprun() {
   *) fzf --preview 'batcat -n --color=always --line-range :500 {}' "$@" ;;
   esac
 }
+
+# add shortcut alias for thefuck (command autocorrect)
+eval "$(thefuck --alias fk)"
